@@ -1,66 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script src="https://pl28595525.effectivegatecpm.com/b7/56/cf/b756cfd164383bd831c3173e4e86a575.js"></script>
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Viral Tags | By Your Name</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; background-color: #0f0f0f; color: white; text-align: center; padding: 20px; }
-        .container { max-width: 450px; margin: 0 auto; background: #1a1a1a; padding: 25px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.7); border: 1px solid #333; }
-        h1 { background: linear-gradient(to right, #ff0050, #00f2ea); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 32px; margin-bottom: 10px; }
-        input { width: 90%; padding: 15px; border-radius: 12px; border: 2px solid #333; margin-bottom: 20px; background: #121212; color: white; font-size: 16px; outline: none; }
-        .btn { background: linear-gradient(45deg, #ff0050, #00f2ea); color: white; padding: 15px; border: none; border-radius: 12px; cursor: pointer; font-weight: bold; width: 100%; font-size: 18px; transition: 0.3s; }
-        .btn:active { transform: scale(0.95); }
-        .result-box { margin-top: 25px; background: #252525; padding: 20px; border-radius: 15px; display: none; text-align: left; border: 1px dashed #00f2ea; }
-        .tags-area { color: #00f2ea; word-wrap: break-word; line-height: 1.8; font-size: 15px; margin-bottom: 15px; }
-        .copy-btn { background: #444; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 14px; width: 100%; }
-        .footer { margin-top: 25px; padding-top: 15px; border-top: 1px solid #333; }
-        .footer p { font-size: 12px; color: #888; margin: 0; }
-        .footer h3 { color: #00f2ea; margin: 5px 0; font-size: 18px; }
-    </style>
+    <title>Viral Hashtags Generator</title>
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 20px; background-color: #111; color: white;">
 
-<div class="container">
-    <h1>Global Tags 🌍</h1>
-    <p style="color: #bbb;">Enter Topic for Viral Hashtags</p>
-    
-    <input type="text" id="userTopic" placeholder="e.g. Funny, Gaming, Food">
-    <button class="btn" onclick="generateTags()">Generate Viral Tags</button>
+    <h2 style="color: #25d366;">🔥 Viral Hashtags Generator</h2>
+    <input type="text" id="topic" placeholder="e.g. Cricket, Funny" style="padding: 12px; border-radius: 5px; width: 80%; border: none; margin-bottom: 10px;">
+    <br>
 
-    <div id="resultBox" class="result-box">
-        <div id="tagsDisplay" class="tags-area"></div>
-        <button class="copy-btn" onclick="copyToClipboard()">📋 Copy All Tags</button>
-    </div>
+    <button onclick="generate()" style="padding: 15px 30px; background: linear-gradient(to right, #ff0050, #00f2ea); color: white; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; font-size: 16px;">
+        Generate Viral Tags
+    </button>
 
-    <div class="footer">
-        <p>Developed By</p>
-        <h3>M.M.Q 🚀</h3> 
-    </div>
-</div>
+    <div id="result" style="margin-top: 20px; padding: 15px; border: 1px dashed #25d366; display: none; background: #222; border-radius: 8px;"></div>
 
-<script>
-    function generateTags() {
-        let topic = document.getElementById("userTopic").value;
-        if(topic.trim() === "") { alert("Please enter a topic!"); return; }
-
-        let globalTags = "#viral #trending #foryou #fyp #explore #popular #2026 #tiktok #reels #viralvideo ";
-        let topicTags = "#" + topic + " #" + topic + "Viral #" + topic + "TikTok #" + topic + "Trending #" + topic + "Video";
+    <script>
+    function generate() {
+        // --- APNA SMARTLINK YAHAN PASTE KAREIN ---
+        var myLink = 'https://www.effectivegatecpm.com/i01cq7gfy?key=1bfcf7831ee27c0e78cea6f9aef74770'; 
         
-        document.getElementById("tagsDisplay").innerText = globalTags + topicTags;
-        document.getElementById("resultBox").style.display = "block";
-    }
+        window.open(myLink, '_blank'); 
 
-    function copyToClipboard() {
-        let text = document.getElementById("tagsDisplay").innerText;
-        navigator.clipboard.writeText(text).then(() => {
-            alert("✅ Tags Copied!");
-        });
+        var topic = document.getElementById('topic').value;
+        if(topic) {
+            document.getElementById('result').style.display = "block";
+            document.getElementById('result').innerText = "#" + topic.replace(/ /g, "") + " #viral #trending #fyp #2026";
+        }
     }
-</script>
-
+    </script>
 </body>
 </html>
